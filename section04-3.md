@@ -15,7 +15,19 @@
 
 После ввода этой команды откроется выбранный вами текстовый редактор, в котором будет отображен следующий текст:
 
-![текстовый редактор с сообщением]()
+```
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   README.md
+#
+```
 
 Вы можете заметить, что комментарий по умолчанию для коммита содержит закомментированный результат команды `git status` и одну пустую строку сверху. Вы можете удалить эти комментарии и написать свое собственное сообщение, либо оставить их, чтобы напомнить себе, что именно вы фиксируете.
 
@@ -27,8 +39,29 @@
 
 Это приведет к тому, что в комментарий также будет включена информация о дельте/diff изменений, позволяя вам точно увидеть все изменения, которые вы сделали. 
 
-![текстовый редактор с дельтой]()
+```
 
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   README.md
+#
+# ------------------------ >8 ------------------------
+# Do not modify or remove the line above.
+# Everything below it will be ignored.
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..1024edc
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1 @@
++# new-rep README.md file
+```
 
 ### Параметр -m. Ввести сообщение при вызове команды
 
@@ -48,9 +81,7 @@
 
     git commit -a
 
-![вывод git status]()
-
-![использование git commit -a]()
+![вывод git status и использование git commit -a]()
 
 > Однако, важно обратить внимание, что в данном случае вам не нужно делать `git add` перед коммитом. Это удобно, но будьте осторожны – флаг __-a__ может включить в коммит нежелательные изменения. Необходимо внимательно проверять состояние файлов перед коммитом, чтобы удостовериться, что только нужные изменения включены в коммит.
 
