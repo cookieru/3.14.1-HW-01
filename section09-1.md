@@ -16,7 +16,7 @@ git branch testing
 
 С помощью команды `git log --decorate` можно увидеть, куда указывают указатели веток.
 
-![результат работы git log --decorate]()
+![результат работы git log --decorate](https://github.com/cookieru/3.14.1-HW-01/blob/be6e80c7164a8bb750fa7c774b680c1fb3bebd72/images/2023-12-18%20223354.png?raw=true)
 
 Команда git checkout. Переключение ветки
 ----------------------------------------
@@ -31,7 +31,7 @@ git checkout testing
 
 Теперь можно работать с веткой ___testing___, и все сделанные комимиты затронут только эту ветку.
 
-![что-то сделалали с веткой testing]()
+![что-то сделалали с веткой testing](https://github.com/cookieru/3.14.1-HW-01/blob/be6e80c7164a8bb750fa7c774b680c1fb3bebd72/images/2023-12-18%20224119.png?raw=true)
 
 При этом можно вернутся к ветке ___master___ и работать с ней паралельно. Выполним команду:
 
@@ -45,11 +45,11 @@ git checkout master
 
 Давайте сделаем ещё несколько изменений и создадим очередной коммит.
 
-![что-то сделалали с веткой master]()
+![что-то сделалали с веткой master](https://github.com/cookieru/3.14.1-HW-01/blob/be6e80c7164a8bb750fa7c774b680c1fb3bebd72/images/2023-12-18%20224311.png?raw=true)
 
 Все описанные действия можно визуализировать с помощью команды `git log --oneline --decorate --graph --all`:
 
-![результат работы git log]()
+![результат работы git log](https://github.com/cookieru/3.14.1-HW-01/blob/be6e80c7164a8bb750fa7c774b680c1fb3bebd72/images/2023-12-18%20224345.png?raw=true)
 
 [<< Вернуться к оглалению](README.md) | [^ Ветвление в Git](section09.md)
 
